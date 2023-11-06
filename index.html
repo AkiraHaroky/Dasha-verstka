@@ -1,0 +1,328 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Пример с Bootstrap 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- <div class="container">
+            <header class="d-flex justify-content-center py-3">
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="#block-header" class="nav-link active" aria-current="page">Главная</a>
+                    </li>
+                    <li class="nav-item"><a href="#block-body-1" class="nav-link">О нас</a></li>
+                    <li class="nav-item"><a href="#block-body-2" class="nav-link">Как оформить заказ</a></li>
+                    <li class="nav-item"><a href="#block-nav" class="nav-link">FAQ</a></li>
+                </ul>
+            </header>
+        </div> -->
+        <nav class="navbar sticky-top navbar-expand-lg" style="background-color: #FEF8F5;">
+            <div class="container-fluid">
+                <a class="navbar-brand text-uppercase" href="#" style="color: #EE4D47">mealpro</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#block-header"
+                                style="color: #EE4D47">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#block-body-1" style="color: #EE4D47">О нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#block-body-2" style="color: #EE4D47">Как оформить заказ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#block-nav" style="color: #EE4D47">Вопросы/ответы</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="block-header" class="container-fluid d-flex flex-column justify-content-center align-items-center"
+            style="background-image: url('imgs/1.jpg'); aspect-ratio: 1.7;
+            background-size: contain;
+            background-repeat: no-repeat;">
+            <div class="row d-flex flex-row">
+                <div class="pe-5 ps-md-5 col-sm-8 w-75">
+                    <h1 class="text-left fw-normal text-wrap" style="font-size: calc(3vi + 3vb); color: white;">
+                        Ваша любимая доставка.
+                    </h1>
+                    <!-- Кнопка-триггер модального окна -->
+                    <button id="myInput" type="button" class="btn btn-danger text-capitalize" data-toggle="tooltip"
+                        title="Сделайте заказ прямо сейчас!" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Заказать доставку <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="spacer col-sm-4"></div>
+            </div>
+        </div>
+        <div id="block-body-1" class="container-fluid d-flex flex-column justify-content-center align-items-center">
+            <div class="row d-flex flex-row w-100" style="aspect-ratio: 1.7">
+                <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
+                    <div class="w-75">
+                        <h2 class="text-uppercase text-start" style="color: #EE4D47">О нас</h2>
+                        <div class="fs-5">Мы - компания, преданная идеи быстрой, надежной и удобной доставки. С
+                            многолетним опытом в этой сфере, мы гордимся тем, что являемся вашим надежным партнером в
+                            доставке товаров, с фокусом на качестве обслуживания и удовлетворении потребностей
+                            клиентов..</div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                    <img src="imgs/3.jpg" class="w-100 h-auto">
+                </div>
+            </div>
+        </div>
+        <div id="block-body-2" class="container-fluid d-flex flex-column justify-content-center align-items-center">
+            <div class="row d-flex flex-row w-100" style="aspect-ratio: 1.7">
+                <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                    <img src="imgs/4.jpg" class="w-100 h-auto">
+                </div>
+                <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
+                    <div class="w-75">
+                        <h2 class="text-uppercase text-start" style="color: #EE4D47;">Как оформить заказ</h2>
+                        <div class="fs-5">Оформление заказа у нас - это просто и удобно. Выберите товары, которые вам
+                            необходимы, добавьте их в корзину, и перейдите к оформлению заказа. Заполните необходимую
+                            информацию, укажите адрес доставки и выберите удобное время доставки. После этого, остается
+                            только подтвердить заказ, и наши курьеры сделают все остальное.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Аккордеон -->
+        <div id="block-nav" class="accordion-wrapper pt-5">
+            <div class="container-fluid d-flex flex-column justify-content-center align-items-center pb-5">
+                <div class="row d-flex flex-row w-100" style="aspect-ratio: 1.7">
+                    <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
+                        <div class="w-75">
+                            <h2 class="text-uppercase text-start" style="color: #EE4D47">FAQ</h2>
+                            <div class="fs-1 fw-bold">Ответы на самые часто задаваемые вопросы:</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                        <img src="imgs/5.jpg" class="w-100 h-auto">
+                    </div>
+                </div>
+            </div>
+            <div class="accordion pb-5" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-heading1">
+                        <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1"
+                            style="color: #EE4D47">
+                            Каковы условия доставки?
+                        </button>
+                    </h2>
+                    <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-heading1"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body fs-5">Мы предоставляем доставку по всему городу в течение 24 часов с
+                            момента оформления заказа.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-heading2">
+                        <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2"
+                            style="color: #EE4D47">
+                            Есть ли опции экспресс-доставки?
+                        </button>
+                    </h2>
+                    <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-heading2"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body fs-5">Да, у нас есть экспресс-доставка, которая позволяет получить
+                            заказ в течение 2-4 часов с момента заказа.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-heading3">
+                        <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3"
+                            style="color: #EE4D47">
+                            Какова стоимость доставки?
+                        </button>
+                    </h2>
+                    <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body fs-5">Стоимость доставки зависит от расстояния и размера заказа. Вы
+                            можете узнать стоимость доставки при оформлении заказа.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-heading4">
+                        <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4"
+                            style="color: #EE4D47">
+                            Как отследить мой заказ?
+                        </button>
+                    </h2>
+                    <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body fs-5">Вы можете отслеживать статус вашего заказа через нашу
+                            онлайн-систему отслеживания. Мы также предоставляем SMS-уведомления.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-heading5">
+                        <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5"
+                            style="color: #EE4D47">
+                            Что делать, если мой заказ задерживается?
+                        </button>
+                    </h2>
+                    <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body fs-5">В случае задержки, свяжитесь с нашей службой поддержки
+                            клиентов, и мы незамедлительно разберемся в ситуации.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-heading6">
+                        <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse6"
+                            style="color: #EE4D47">
+                            Какие методы оплаты вы принимаете?
+                        </button>
+                    </h2>
+                    <div id="flush-collapse6" class="accordion-collapse collapse" aria-labelledby="flush-heading6"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body fs-5">Мы принимаем оплату наличными курьеру при получении заказа, а
+                            также онлайн-оплату через кредитные карты и электронные платежные системы.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Слайдер Bootstrap 5 -->
+        <div class="fs-1 text-center text-capitalize" style="color: #EE4D47;">наша галерея</div>
+        <div class="bock-with-slider" style="height: 100vh; width: 100%">
+            <div id="carouselExampleIndicators" class="carousel slide w-100 h-100" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner w-100 h-100">
+                    <div class="carousel-item w-100 h-100 active">
+                        <img src="https://images.unsplash.com/photo-1690500688587-7b926886be38?q=80&w=1866&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="d-block w-100 h-100" style="
+                                    object-fit: cover;
+                                    object-position: 50%;
+                                " alt="Картинка 1" />
+                    </div>
+                    <div class="carousel-item w-100 h-100">
+                        <img src="https://images.unsplash.com/photo-1681514583222-0579e6835666?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="d-block w-100 h-100" style="
+                                    object-fit: cover;
+                                    object-position: 50%;
+                                " alt="Картинка 2" />
+                    </div>
+                    <div class="carousel-item w-100 h-100">
+                        <img src="https://images.unsplash.com/photo-1681514202593-fe3fbe8f243c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="d-block w-100 h-100" style="
+                                    object-fit: cover;
+                                    object-position: 50%;
+                                " alt="Картинка 3" />
+                    </div>
+                    <div class="carousel-item w-100 h-100">
+                        <img src="https://images.unsplash.com/photo-1639961711253-9e0c66ef108e?q=80&w=1882&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="d-block w-100 h-100" style="
+                                    object-fit: contain;
+                                    object-position: 50%;
+                                " alt="Картинка 4" />
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Модальное окно Bootstrap -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Сделайте заказ прямо сейчас</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" data-toggle="tooltip"
+                            title="Закрыть" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <!-- Форма + валидация Bootstrap 5 -->
+                        <form onsubmit="return validateForm()">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Имя</label>
+                                <input type="text" required="true" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Alex" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput2" class="form-label">Email адрес</label>
+                                <input type="email" required="true" class="form-control" id="exampleFormControlInput2"
+                                    placeholder="name@example.com" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Описание
+                                    заказа</label><br />
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password">Пароль</label>
+                                <input type="password" required="true" class="form-control" id="password" />
+                                <div class="invalid-feedback">
+                                    Пожалуйста, введите пароль.
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <button type="submit" id="validationBtn" data-toggle="tooltip" title="Сделать заказ"
+                                    class="btn btn-primary">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Подключение Bootstrap JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script src="./script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
